@@ -1,0 +1,15 @@
+body {
+  min-width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+/*Fix borde header*/
+.xd32934 {
+  border-top-left-radius: 0px !important;
+}
+.theme-toggle-icon {
+  height: 1.4rem !important;
+  width: 1.4rem !important;
+}

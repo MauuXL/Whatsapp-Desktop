@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  width: 300px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+.header {
+  background-color: #272727;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.header h1 {
+  color: white;
+  font-size: 22px;
+}
+.content {
+  display: flex;
+  margin: 20px 0;
+  align-items: center;
+}
+.footer {
+  align-items: center;
+  margin: 20px 0 20px 0;
+  font-size: 12px;
+  color: #888;
+}
