@@ -1,8 +1,7 @@
 const { app, BrowserWindow, session } = require("electron");
 const path = require("path");
 
-const EXTENSION_PATH = path.join(__dirname, "mi-extension"); // cambia esto si tu carpeta se llama distinto
-
+const EXTENSION_PATH = path.join(__dirname, "mi-extension");
 function createWindow() {
   const win = new BrowserWindow({
     width: 1200,
@@ -19,7 +18,7 @@ function createWindow() {
 }
 
 app.whenReady().then(async () => {
-  // Cargar la extensión
+
   await session.defaultSession.loadExtension(EXTENSION_PATH, { allowFileAccess: true });
 
   createWindow();
