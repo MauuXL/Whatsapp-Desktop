@@ -1,0 +1,19 @@
+/*Fix fullscreen*/
+.app-wrapper-web ._aigs:not(._as6h){
+  width:100vw !important;
+  height: 100vh !important;
+  top:0 !important;
+}
+/*Fix border header*/
+.xd32934 {
+  border-top-left-radius: 0px !important;
+}
+/*Toggle icon size*/
+.theme-toggle-icon {
+  height: 1.4rem !important;
+  width: 1.4rem !important;
+}
+/**/
+.xieb3on{
+  display: none !important;
+}
