@@ -60,12 +60,19 @@ let eyeButtonOn = false;
 
 // Agregar evento de clic al eyeButton
 eyeButton.onclick = function () {
+  let blurEye = document.querySelectorAll('[role="listitem"]');
   eyeButton.style.background = "var(--menu-bar-item-background-active)";
   if (!eyeButtonOn) {
     eyeButton.innerHTML = eyeOn;
+    blurEye.forEach(element => {
+      element.style.filter = "blur(5px)";
+    });
     eyeButtonOn = true;
   } else {
     eyeButton.innerHTML = eyeOff;
+    blurEye.forEach(element => {
+      element.style.filter = "blur(0px)";
+    });
     eyeButtonOn = false;
   }
   setTimeout(() => {
