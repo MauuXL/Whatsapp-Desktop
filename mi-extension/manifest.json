@@ -10,7 +10,14 @@
     {
       "matches": ["https://web.whatsapp.com/*"],
       "css": ["css/content.css", "css/pallete.css"],
-      "js": ["scripts/theme.js", "scripts/toggle.js", "scripts/privacy.js", "scripts/tooltip.js", "scripts/content.js"],
+      "js": [
+        "scripts/theme.js",
+        "scripts/toggle.js",
+        "scripts/rgb.js",
+        "scripts/privacy.js",
+        "scripts/tooltip.js",
+        "scripts/content.js"
+      ],
       "run_at": "document_end"
     }
   ]
