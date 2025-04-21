@@ -1,4 +1,3 @@
-let statusMenu = document.querySelectorAll('[data-icon="chats-outline"]');
 // Función para convertir HEX a RGB
 function hexToRgb(hex) {
   const bigint = parseInt(hex.slice(1), 16);
@@ -35,10 +34,6 @@ function addChangeTheme() {
     if (e.button === 0) {
       lightThemeOn = (lightThemeOn % 4) + 1;
       statusDarkThemeOn();
-      //toggleButton.style.background = "var(--menu-bar-item-background-active)";
-      //setTimeout(() => {
-      //toggleButton.style.background = "rgba(0,0,0,0)";
-      //}, 200);
       localStorage.setItem("whatsapp-dark-theme-light", lightThemeOn);
     }
   });
@@ -54,11 +49,6 @@ function addChangeTheme() {
         const rgb = hexToRgb(e.target.value);
         document.documentElement.style.setProperty("--acent-color", rgb);
       });
-      colorPicker.addEventListener("blur", () => {
-        colorPicker.remove();
-      });
-
-      colorPicker.focus();
       colorPicker.click();
     }
   });

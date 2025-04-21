@@ -28,7 +28,24 @@ let toggleButtonOn = `<button
      </svg>
 </button>`;
 
-let container = `<div id="menu-theme" class="x78zum5 xdt5ytf x5yr21d x17qophe x6ikm8r x10wlt62 x67bb7w x10l6tqk x13vifvy xh8yej3 x150wa6m xnpuxes copyable-area">
+let containerDiv = document.createElement("div");
+containerDiv.classList.add(
+  "x78zum5",
+  "xdt5ytf",
+  "x5yr21d",
+  "x17qophe",
+  "x6ikm8r",
+  "x10wlt62",
+  "x67bb7w",
+  "x10l6tqk",
+  "x13vifvy",
+  "xh8yej3",
+  "x150wa6m",
+  "xnpuxes",
+  "copyable-area"
+);
+
+let container = `<div id="menu-theme">
 <header class="xd32934 x9f619 x78zum5 x1okw0bk x6s0dn4 x7j6532 xzwifym x150wa6m x1swvt13 x1iji9kk">
 <div class="x78zum5 x1okw0bk x6s0dn4 xh8yej3 x14wi4xw xexx8yu x4uap5 x18d9i69 xkhd6sd">
 <div title="Temas" class="x104kibb x1iyjqo2 x4osyxg x1198e8h x6ikm8r x10wlt62 x1mzt3pk xo442l1 x1ua5tub x117nqv4 x1aueamr x1wm35g xj8l9r2">
@@ -131,40 +148,10 @@ let container = `<div id="menu-theme" class="x78zum5 xdt5ytf x5yr21d x17qophe x6
 </div>
 </div>
 </div>`;
-// SOLUCIONAR ESTOOOOOOOOOOOOOOOOO
-function addContainerPatch() {
-  let containerPatch = document.querySelector(".xxpasqj");
-  containerPatch.innerHTML = container;
-  containerPatch.style.opacity = 1;
-  addChangeTheme();
-  removeContainer();
-}
-function removeContainer() {
-  document.querySelectorAll("._ajv7").forEach((icon) => {
-    icon.addEventListener("click", () => {
-      const menuTheme = document.getElementById("menu-theme");
-      if (menuTheme) {
-        menuTheme.remove();
-      }
-    });
-  });
-}
 
-toggleButton.style.background = "rgba(0,0,0,0)";
-toggleButton.innerHTML = toggleButtonOn;
+containerDiv.innerHTML = container;
 
-// Agregar evento desplegar menu de temas
-toggleButton.addEventListener("click", (e) => {
-  if (e.button === 0) {
-    addContainerPatch();
-    toggleButton.style.background = "var(--menu-bar-item-background-active)";
-    setTimeout(() => {
-      toggleButton.style.background = "rgba(0,0,0,0)";
-    }, 10000);
-  }
-});
-
-// Agregando toggle
+// Funcion que agrega el toggle button
 function addToggleButton() {
   let targetElement = document.querySelector(".xyorhqc");
   if (targetElement) {
@@ -173,3 +160,27 @@ function addToggleButton() {
     setTimeout(addToggleButton, 1000);
   }
 }
+
+/*Funcion que cierra el menu de temas */
+function removeContainer() {
+  document.querySelectorAll("._ajv7").forEach((icon) => {
+    icon.addEventListener("click", () => {
+      containerPatch.removeChild(containerDiv);
+    });
+  });
+}
+/*Funcion que agrega el menu de temas */
+function addContainerPatch() {
+  let containerPatch = document.querySelector(".xxpasqj");
+  containerPatch.appendChild(containerDiv);
+  removeContainer();
+}
+// Agregar evento desplegar menu de temas
+toggleButton.style.background = "rgba(0,0,0,0)";
+toggleButton.innerHTML = toggleButtonOn;
+toggleButton.addEventListener("click", (e) => {
+  if (e.button === 0) {
+    addContainerPatch();
+    toggleButton.style.background = "var(--menu-bar-item-background-active)";
+  }
+});
