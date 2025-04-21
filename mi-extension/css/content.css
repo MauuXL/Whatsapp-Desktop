@@ -1,6 +1,7 @@
 /*Fix fullscreen*/
 .app-wrapper-web ._aigs:not(._as6h){
   width:100vw !important;
+  max-width:100vw !important;
   height: 100vh !important;
   top:0 !important;
 }

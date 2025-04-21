@@ -29,6 +29,7 @@ let toggleButtonOn = `<button
 </button>`;
 
 let containerDiv = document.createElement("div");
+containerDiv.id = "menu-theme";
 containerDiv.classList.add(
   "x78zum5",
   "xdt5ytf",
@@ -45,7 +46,7 @@ containerDiv.classList.add(
   "copyable-area"
 );
 
-let container = `<div id="menu-theme">
+let container = `
 <header class="xd32934 x9f619 x78zum5 x1okw0bk x6s0dn4 x7j6532 xzwifym x150wa6m x1swvt13 x1iji9kk">
 <div class="x78zum5 x1okw0bk x6s0dn4 xh8yej3 x14wi4xw xexx8yu x4uap5 x18d9i69 xkhd6sd">
 <div title="Temas" class="x104kibb x1iyjqo2 x4osyxg x1198e8h x6ikm8r x10wlt62 x1mzt3pk xo442l1 x1ua5tub x117nqv4 x1aueamr x1wm35g xj8l9r2">
@@ -146,14 +147,16 @@ let container = `<div id="menu-theme">
 </div>
 </div>
 </div>
-</div>
 </div>`;
 
-containerDiv.innerHTML = container;
+
 
 // Funcion que agrega el toggle button
 function addToggleButton() {
   let targetElement = document.querySelector(".xyorhqc");
+  // Agregar evento desplegar menu de temas
+toggleButton.style.background = "rgba(0,0,0,0)";
+toggleButton.innerHTML = toggleButtonOn;
   if (targetElement) {
     targetElement.insertBefore(toggleButton, targetElement.firstChild);
   } else {
@@ -161,26 +164,36 @@ function addToggleButton() {
   }
 }
 
-/*Funcion que cierra el menu de temas */
-function removeContainer() {
-  document.querySelectorAll("._ajv7").forEach((icon) => {
-    icon.addEventListener("click", () => {
-      containerPatch.removeChild(containerDiv);
-    });
-  });
-}
 /*Funcion que agrega el menu de temas */
 function addContainerPatch() {
   let containerPatch = document.querySelector(".xxpasqj");
+  containerDiv.innerHTML = container;
   containerPatch.appendChild(containerDiv);
-  removeContainer();
+  addChangeTheme()
 }
-// Agregar evento desplegar menu de temas
-toggleButton.style.background = "rgba(0,0,0,0)";
-toggleButton.innerHTML = toggleButtonOn;
-toggleButton.addEventListener("click", (e) => {
-  if (e.button === 0) {
+let statusConteiner = 0;
+toggleButton.addEventListener("click", () => {
+  if (statusConteiner === 0) {
+    removeContainer()
     addContainerPatch();
     toggleButton.style.background = "var(--menu-bar-item-background-active)";
+    statusConteiner = 1
+  }else{
+    document.querySelector("#menu-theme").remove();
+    toggleButton.style.background = "rgba(0,0,0,0)";
+    statusConteiner = 0;
   }
 });
+
+/*Funcion que cierra el menu de temas */
+function removeContainer() {
+  document.querySelectorAll("._ajv7 button").forEach((icon) => {
+    icon.addEventListener("click", () => {
+      if (statusConteiner === 1) {
+        document.querySelector("#menu-theme").remove();
+        icon.background = "rgba(0,0,0,0)";
+        statusConteiner = 0;
+      }
+    });
+  });
+}

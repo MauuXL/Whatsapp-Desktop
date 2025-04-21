@@ -6,26 +6,6 @@ function hexToRgb(hex) {
   const b = bigint & 255;
   return `${r}, ${g}, ${b}`;
 }
-// Despliega el selector de color
-toggleButton.addEventListener("contextmenu", (e) => {
-  e.preventDefault(); // Evitar que se muestre el menú contextual del navegador
-  let inputRgb = document.createElement("div");
-  inputRgb.innerHTML = `<input type="color" id="colorPicker" style="display: none;">`;
-  toggleButton.appendChild(inputRgb);
-  const colorPicker = document.getElementById("colorPicker");
-
-  colorPicker.addEventListener("input", (e) => {
-    const rgb = hexToRgb(e.target.value);
-    document.documentElement.style.setProperty("--acent-color", rgb);
-    console.log("Color seleccionado:", rgb);
-  });
-  colorPicker.addEventListener("blur", () => {
-    colorPicker.remove();
-  });
-
-  colorPicker.focus();
-  colorPicker.click();
-});
 function addChangeTheme() {
   let changeTheme = document.getElementById("changeTheme");
   let changeRgb = document.getElementById("changeRgb");
@@ -52,4 +32,22 @@ function addChangeTheme() {
       colorPicker.click();
     }
   });
+  // Despliega el selector de color
+changeTheme.addEventListener("click", () => {
+  let inputRgb = document.createElement("div");
+  inputRgb.innerHTML = `<input type="color" id="colorPicker" style="display: none;">`;
+  toggleButton.appendChild(inputRgb);
+  const colorPicker = document.getElementById("colorPicker");
+
+  colorPicker.addEventListener("input", (e) => {
+    const rgb = hexToRgb(e.target.value);
+    document.documentElement.style.setProperty("--acent-color", rgb);
+  });
+  colorPicker.addEventListener("blur", () => {
+    colorPicker.remove();
+  });
+
+  colorPicker.focus();
+  colorPicker.click();
+});
 }
