@@ -174,10 +174,10 @@ function addContainerPatch() {
 let statusConteiner = 0;
 toggleButton.addEventListener("click", () => {
   if (statusConteiner === 0) {
-    removeContainer()
+    //removeContainer()
     addContainerPatch();
     toggleButton.style.background = "var(--menu-bar-item-background-active)";
-    statusConteiner = 1
+    statusConteiner = 1;
   }else{
     document.querySelector("#menu-theme").remove();
     toggleButton.style.background = "rgba(0,0,0,0)";
@@ -187,7 +187,7 @@ toggleButton.addEventListener("click", () => {
 
 /*Funcion que cierra el menu de temas */
 function removeContainer() {
-  document.querySelectorAll("._ajv7 button").forEach((icon) => {
+  document.querySelectorAll(".x6s6g2w").forEach((icon) => {
     icon.addEventListener("click", () => {
       if (statusConteiner === 1) {
         document.querySelector("#menu-theme").remove();
