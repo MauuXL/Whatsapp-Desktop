@@ -22,7 +22,7 @@ function addChangeTheme() {
     if (e.button === 0) {
       let inputRgb = document.createElement("div");
       inputRgb.innerHTML = `<input type="color" id="colorPicker" style="display: none;">`;
-      toggleButton.appendChild(inputRgb);
+      changeRgb.appendChild(inputRgb);
       const colorPicker = document.getElementById("colorPicker");
 
       colorPicker.addEventListener("input", (e) => {
@@ -33,21 +33,4 @@ function addChangeTheme() {
     }
   });
   // Despliega el selector de color
-changeTheme.addEventListener("click", () => {
-  let inputRgb = document.createElement("div");
-  inputRgb.innerHTML = `<input type="color" id="colorPicker" style="display: none;">`;
-  toggleButton.appendChild(inputRgb);
-  const colorPicker = document.getElementById("colorPicker");
-
-  colorPicker.addEventListener("input", (e) => {
-    const rgb = hexToRgb(e.target.value);
-    document.documentElement.style.setProperty("--acent-color", rgb);
-  });
-  colorPicker.addEventListener("blur", () => {
-    colorPicker.remove();
-  });
-
-  colorPicker.focus();
-  colorPicker.click();
-});
 }

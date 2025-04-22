@@ -54,19 +54,7 @@ let container = `
 </div>
 </div>
 </header>
-<div class="x1n2onr6 xyw6214 x78zum5 x1r8uery x1iyjqo2 xdt5ytf x6ikm8r x1odjw0f x1hc1fzr">
-<!--body buttons-->
-<div class="x1c4vz4f xs83m0k xdl72j9 x1g77sc7 x78zum5 xozqiw3 x1oa3qoh x12fk4p8 xeuugli x2lwn1j x1nhvcw1 xdt5ytf x1qjc9v5">
-<div class="x1c4vz4f xs83m0k xdl72j9 x1g77sc7 x78zum5 xozqiw3 x1oa3qoh x12fk4p8 xeuugli x2lwn1j x1nhvcw1 xdt5ytf x1qjc9v5">
-<div role="listbox" class="x78zum5 x1iyjqo2 xw2csxc x1odjw0f">
-<div tabindex="-1" class="x78zum5 xdt5ytf x1iyjqo2 x2lah0s xdl72j9 x1odjw0f xh8yej3">
-<div class="x1c4vz4f xs83m0k xdl72j9 x1g77sc7 x78zum5 xozqiw3 x1oa3qoh x12fk4p8 xeuugli x2lwn1j x1nhvcw1 xdt5ytf x1qjc9v5" tabindex="0" data-tab="0">
-<!--elementos-->
-    <div class="xjb2p0i xk390pu x1heor9g x1ypdohk xjbqb8w x972fbf xcfux6l x1qhh985 xm0m39n xexx8yu x4uap5 x18d9i69 xkhd6sd x1yc453h x6ikm8r x10wlt62 x78zum5 x1iyjqo2 x2lah0s xdl72j9 xkh2ocl xh8yej3" tabindex="0" data-tab="0" type="button" role="listitem">
-        <div class="x78zum5 xh8yej3 x1iyjqo2 x1n2onr6 x9f619 xkh2ocl" aria-disabled="false" role="button" tabindex="-1">
-        <div class="xs83m0k xdl72j9 x1g77sc7 x78zum5 xozqiw3 x1oa3qoh x12fk4p8 xeuugli x1nhvcw1 x1q0g3np x9f619 x1iyjqo2 x1qjc9v5 x879a55 x1jwue9u x1dcx0tz">
-        <div class="x1c4vz4f xs83m0k xdl72j9 x1g77sc7 x78zum5 xozqiw3 x1oa3qoh x12fk4p8 x2lwn1j xl56j7k x1q0g3np x6s0dn4 x1y1aw1k xwib8y2 x1swvt13 x1pi30zi x1fns5xo" style="flex-shrink: 0;">
-        <div class="x1n2onr6 x14yjl9h xudhj91 x18nykt9 xww2gxu" style="height: 82px; width: 82px;">
+<div class="">
             <svg height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -88,25 +76,11 @@ let container = `
             <path style="fill:#80CB93;" d="M256,350.316V512c23.319,0,45.899-3.135,67.368-8.977V282.947l-40.421,40.421L256,350.316z"></path>
             <polygon style="fill:#F6E27D;" points="282.947,323.368 256,323.368 256,350.316 "></polygon></g>
             </svg>
-        </div>
-        </div>
-        <div class="x1c4vz4f xs83m0k xdl72j9 x1g77sc7 x78zum5 xozqiw3 x1oa3qoh x12fk4p8 xeuugli x2lwn1j xdt5ytf x12lumcd x1qjc9v5 xl56j7k x9f619 x1pi30zi x1y1aw1k xwib8y2" style="flex: 1 1 auto;">
-        <div class="x1c4vz4f xs83m0k xdl72j9 x1g77sc7 x78zum5 xozqiw3 x1oa3qoh x12fk4p8 xeuugli x2lwn1j x1nhvcw1 x1q0g3np x6s0dn4">
-        <div class="x1c4vz4f xs83m0k xdl72j9 x1g77sc7 xeuugli x2lwn1j xozqiw3 x1oa3qoh x12fk4p8 x6ikm8r x10wlt62 xuxw1ft xlyipyv x9f619 xggjnk3" style="flex-grow: 1;">
-        <div class="x1lkfr7t xdbd6k5 x1fcty0u xw2npq5">
         <span dir="auto" class="x1iyjqo2 x6ikm8r x10wlt62 x1n2onr6 xlyipyv xuxw1ft _ao3e" style="min-height: 0px;">Theme Selector By MauuXL</span>
         </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
     </div>
-    <button id="changeTheme" class="xjb2p0i xk390pu x1heor9g x1ypdohk xjbqb8w x972fbf xcfux6l x1qhh985 xm0m39n xexx8yu x4uap5 x18d9i69 xkhd6sd x1yc453h x6ikm8r x10wlt62 x78zum5 x1iyjqo2 x2lah0s xdl72j9 xkh2ocl xh8yej3" tabindex="0" data-tab="0" type="button" role="listitem">
-        <div class="x78zum5 xh8yej3 x1iyjqo2 x1n2onr6 x9f619 xkh2ocl" aria-disabled="false" role="button" tabindex="-1">
-        <div class="xs83m0k xdl72j9 x1g77sc7 x78zum5 xozqiw3 x1oa3qoh x12fk4p8 xeuugli x1nhvcw1 x1q0g3np x9f619 x1iyjqo2 x1qjc9v5 x879a55 x1jwue9u x1dcx0tz">
-            <div class="x1c4vz4f xs83m0k xdl72j9 x1g77sc7 x78zum5 xozqiw3 x1oa3qoh x12fk4p8 x2lwn1j xl56j7k x1q0g3np x6s0dn4 x1y1aw1k xwib8y2 x1swvt13 x1pi30zi x1fns5xo" style="flex-shrink: 0;">
-            <div>
+    <button id="changeTheme" class="" tabindex="0" data-tab="0" type="button" role="listitem">
+        <div>
             <span aria-hidden="true" data-icon="business-tools" class>
             <svg viewBox="0 0 24 24" height="26" width="26" preserveAspectRatio="xMidYMid meet" class="" fill="none"><title>business-tools</title><g clip-path="url(#clip0_49_15721)"><path d="M20 5C20 4.44772 19.5523 4 19 4H5C4.44772 4 4 4.44772 4 5C4 5.55228 4.44772 6 5 6H19C19.5523 6 20 5.55228 20 5ZM20.1608 7.80388C20.0673 7.33646 19.6569 7 19.1802 7H4.8198C4.34312 7 3.93271 7.33646 3.83922 7.80388L3.01942 11.9029C3.0065 11.9675 3 12.0332 3 12.099V13C3 13.5523 3.44772 14 4 14V18C4 19.1046 4.89543 20 6 20H12C13.1046 20 14 19.1046 14 18V14H18V19C18 19.5523 18.4477 20 19 20C19.5523 20 20 19.5523 20 19V14C20.5523 14 21 13.5523 21 13V12.099C21 12.0332 20.9935 11.9675 20.9806 11.9029L20.1608 7.80388ZM6 18V14H12V18H6Z" fill="currentColor"></path></g><defs><clipPath id="clip0_49_15721"><rect width="24" height="24" fill="white"></rect></clipPath></defs></svg>
             </span>
@@ -117,16 +91,10 @@ let container = `
             <div class="x1c4vz4f xs83m0k xdl72j9 x1g77sc7 xeuugli x2lwn1j xozqiw3 x1oa3qoh x12fk4p8 x6ikm8r x10wlt62 xuxw1ft xlyipyv x9f619 xggjnk3" style="flex-grow: 1;">
             <div class="x1lkfr7t xdbd6k5 x1fcty0u xw2npq5">Cambiador de temas</div>
             </div>
-            </div>
-            </div>
-        </div>
         </div>
     </button>
-    <button id="changeRgb" class="xjb2p0i xk390pu x1heor9g x1ypdohk xjbqb8w x972fbf xcfux6l x1qhh985 xm0m39n xexx8yu x4uap5 x18d9i69 xkhd6sd x1yc453h x6ikm8r x10wlt62 x78zum5 x1iyjqo2 x2lah0s xdl72j9 xkh2ocl xh8yej3" tabindex="0" data-tab="0" type="button" role="listitem">
-        <div class="x78zum5 xh8yej3 x1iyjqo2 x1n2onr6 x9f619 xkh2ocl" aria-disabled="false" role="button" tabindex="-1">
-        <div class="xs83m0k xdl72j9 x1g77sc7 x78zum5 xozqiw3 x1oa3qoh x12fk4p8 xeuugli x1nhvcw1 x1q0g3np x9f619 x1iyjqo2 x1qjc9v5 x879a55 x1jwue9u x1dcx0tz">
-            <div class="x1c4vz4f xs83m0k xdl72j9 x1g77sc7 x78zum5 xozqiw3 x1oa3qoh x12fk4p8 x2lwn1j xl56j7k x1q0g3np x6s0dn4 x1y1aw1k xwib8y2 x1swvt13 x1pi30zi x1fns5xo" style="flex-shrink: 0;">
-            <div>
+    <button id="changeRgb" class="" tabindex="0" data-tab="0" type="button" role="listitem">
+        <div>
             <span aria-hidden="true" data-icon="business-tools" class>
             <svg viewBox="0 0 24 24" height="26" width="26" preserveAspectRatio="xMidYMid meet" class="" fill="none"><title>business-tools</title><g clip-path="url(#clip0_49_15721)"><path d="M20 5C20 4.44772 19.5523 4 19 4H5C4.44772 4 4 4.44772 4 5C4 5.55228 4.44772 6 5 6H19C19.5523 6 20 5.55228 20 5ZM20.1608 7.80388C20.0673 7.33646 19.6569 7 19.1802 7H4.8198C4.34312 7 3.93271 7.33646 3.83922 7.80388L3.01942 11.9029C3.0065 11.9675 3 12.0332 3 12.099V13C3 13.5523 3.44772 14 4 14V18C4 19.1046 4.89543 20 6 20H12C13.1046 20 14 19.1046 14 18V14H18V19C18 19.5523 18.4477 20 19 20C19.5523 20 20 19.5523 20 19V14C20.5523 14 21 13.5523 21 13V12.099C21 12.0332 20.9935 11.9675 20.9806 11.9029L20.1608 7.80388ZM6 18V14H12V18H6Z" fill="currentColor"></path></g><defs><clipPath id="clip0_49_15721"><rect width="24" height="24" fill="white"></rect></clipPath></defs></svg>
             </span>
@@ -137,9 +105,6 @@ let container = `
             <div class="x1c4vz4f xs83m0k xdl72j9 x1g77sc7 xeuugli x2lwn1j xozqiw3 x1oa3qoh x12fk4p8 x6ikm8r x10wlt62 xuxw1ft xlyipyv x9f619 xggjnk3" style="flex-grow: 1;">
             <div class="x1lkfr7t xdbd6k5 x1fcty0u xw2npq5">Seleccionar acento</div>
             </div>
-            </div>
-            </div>
-        </div>
         </div>
     </button>
 </div>
@@ -149,14 +114,12 @@ let container = `
 </div>
 </div>`;
 
-
-
 // Funcion que agrega el toggle button
 function addToggleButton() {
   let targetElement = document.querySelector(".xyorhqc");
   // Agregar evento desplegar menu de temas
-toggleButton.style.background = "rgba(0,0,0,0)";
-toggleButton.innerHTML = toggleButtonOn;
+  toggleButton.style.background = "rgba(0,0,0,0)";
+  toggleButton.innerHTML = toggleButtonOn;
   if (targetElement) {
     targetElement.insertBefore(toggleButton, targetElement.firstChild);
   } else {
@@ -167,33 +130,33 @@ toggleButton.innerHTML = toggleButtonOn;
 /*Funcion que agrega el menu de temas */
 function addContainerPatch() {
   let containerPatch = document.querySelector(".xxpasqj");
+  containerDiv.style.zIndex = 9999;
   containerDiv.innerHTML = container;
   containerPatch.appendChild(containerDiv);
-  addChangeTheme()
+  addChangeTheme();
 }
 let statusConteiner = 0;
 toggleButton.addEventListener("click", () => {
   if (statusConteiner === 0) {
-    //removeContainer()
     addContainerPatch();
-    toggleButton.style.background = "var(--menu-bar-item-background-active)";
+    toggleButton.classList.add("activo");
     statusConteiner = 1;
-  }else{
+  } else {
     document.querySelector("#menu-theme").remove();
-    toggleButton.style.background = "rgba(0,0,0,0)";
+    toggleButton.classList.remove("activo");
     statusConteiner = 0;
   }
-});
 
-/*Funcion que cierra el menu de temas */
-function removeContainer() {
-  document.querySelectorAll(".x6s6g2w").forEach((icon) => {
-    icon.addEventListener("click", () => {
+  const labels = ["chats-filled", "status-outline", "newsletter-outline", "community-outline", "settings-outline"];
+
+  labels.forEach((label) => {
+    document.querySelectorAll(`[data-icon='${label}']`).forEach((icon) => {
+      const parent = icon.closest("._ajv7");
       if (statusConteiner === 1) {
-        document.querySelector("#menu-theme").remove();
-        icon.background = "rgba(0,0,0,0)";
-        statusConteiner = 0;
+        parent.setAttribute("style", "background: rgba(0,0,0,0);");
+      } else {
+        parent.removeAttribute("style");
       }
     });
   });
-}
+});
