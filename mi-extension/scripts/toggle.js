@@ -1,22 +1,22 @@
 let toggleButton = document.createElement("div");
 toggleButton.id = "toggleButton";
 toggleButton.classList.add(
-  "_ajv7",
-  "x1n2onr6",
-  "x1okw0bk",
-  "x5yr21d",
-  "x14yjl9h",
-  "xudhj91",
-  "x18nykt9",
-  "xww2gxu",
-  "xlkovuz",
-  "x16j0l1c",
-  "x1786zcw",
-  "xyklrzc",
-  "x1mh8g0r",
-  "x1anpbxc",
-  "x18wx58x",
-  "xo92w5m"
+    "_ajv7",
+    "x1n2onr6",
+    "x1okw0bk",
+    "x5yr21d",
+    "x14yjl9h",
+    "xudhj91",
+    "x18nykt9",
+    "xww2gxu",
+    "xlkovuz",
+    "x16j0l1c",
+    "x1786zcw",
+    "xyklrzc",
+    "x1mh8g0r",
+    "x1anpbxc",
+    "x18wx58x",
+    "xo92w5m"
 );
 
 let toggleButtonOn = `<button
@@ -31,19 +31,19 @@ let toggleButtonOn = `<button
 let containerDiv = document.createElement("div");
 containerDiv.id = "menu-theme";
 containerDiv.classList.add(
-  "x78zum5",
-  "xdt5ytf",
-  "x5yr21d",
-  "x17qophe",
-  "x6ikm8r",
-  "x10wlt62",
-  "x67bb7w",
-  "x10l6tqk",
-  "x13vifvy",
-  "xh8yej3",
-  "x150wa6m",
-  "xnpuxes",
-  "copyable-area"
+    "x78zum5",
+    "xdt5ytf",
+    "x5yr21d",
+    "x17qophe",
+    "x6ikm8r",
+    "x10wlt62",
+    "x67bb7w",
+    "x10l6tqk",
+    "x13vifvy",
+    "xh8yej3",
+    "x150wa6m",
+    "xnpuxes",
+    "copyable-area"
 );
 
 let container = `
@@ -116,47 +116,47 @@ let container = `
 
 // Funcion que agrega el toggle button
 function addToggleButton() {
-  let targetElement = document.querySelector(".xyorhqc");
-  // Agregar evento desplegar menu de temas
-  toggleButton.style.background = "rgba(0,0,0,0)";
-  toggleButton.innerHTML = toggleButtonOn;
-  if (targetElement) {
-    targetElement.insertBefore(toggleButton, targetElement.firstChild);
-  } else {
-    setTimeout(addToggleButton, 1000);
-  }
+    let targetElement = document.querySelector(".xyorhqc");
+    // Agregar evento desplegar menu de temas
+    toggleButton.style.background = "rgba(0,0,0,0)";
+    toggleButton.innerHTML = toggleButtonOn;
+    if (targetElement) {
+        targetElement.insertBefore(toggleButton, targetElement.firstChild);
+    } else {
+        setTimeout(addToggleButton, 1000);
+    }
 }
 
 /*Funcion que agrega el menu de temas */
 function addContainerPatch() {
-  let containerPatch = document.querySelector(".xxpasqj");
-  containerDiv.style.zIndex = 9999;
-  containerDiv.innerHTML = container;
-  containerPatch.appendChild(containerDiv);
-  addChangeTheme();
+    let containerPatch = document.querySelector(".xxpasqj");
+    containerDiv.style.zIndex = 9999;
+    containerDiv.innerHTML = container;
+    containerPatch.appendChild(containerDiv);
+    addChangeTheme();
 }
 let statusConteiner = 0;
 toggleButton.addEventListener("click", () => {
-  if (statusConteiner === 0) {
-    addContainerPatch();
-    toggleButton.classList.add("activo");
-    statusConteiner = 1;
-  } else {
-    document.querySelector("#menu-theme").remove();
-    toggleButton.classList.remove("activo");
-    statusConteiner = 0;
-  }
+    if (statusConteiner === 0) {
+        addContainerPatch();
+        toggleButton.classList.add("activo");
+        statusConteiner = 1;
+    } else {
+        document.querySelector("#menu-theme").remove();
+        toggleButton.classList.remove("activo");
+        statusConteiner = 0;
+    }
 
-  const labels = ["chats-filled", "status-outline", "newsletter-outline", "community-outline", "settings-outline"];
+    const labels = ["chats-filled", "status-outline", "newsletter-outline", "community-outline", "settings-outline"];
 
-  labels.forEach((label) => {
-    document.querySelectorAll(`[data-icon='${label}']`).forEach((icon) => {
-      const parent = icon.closest("._ajv7");
-      if (statusConteiner === 1) {
-        parent.setAttribute("style", "background: rgba(0,0,0,0);");
-      } else {
-        parent.removeAttribute("style");
-      }
+    labels.forEach((label) => {
+        document.querySelectorAll(`[data-icon='${label}']`).forEach((icon) => {
+            const parent = icon.closest("._ajv7");
+            if (statusConteiner === 1) {
+                parent.setAttribute("style", "background: rgba(0,0,0,0);");
+            } else {
+                parent.removeAttribute("style");
+            }
+        });
     });
-  });
 });

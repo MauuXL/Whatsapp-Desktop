@@ -19,7 +19,7 @@ const arrayChat = (blur) => {
 };
 // Agregar evento de clic al eyeButton
 eyeButton.addEventListener("click", () => {
-    eyeButtonOn = ! eyeButtonOn;
+    eyeButtonOn = !eyeButtonOn;
     eyeButton.style.background = "var(--menu-bar-item-background-active)";
     eyeStatus(eyeButtonOn ? eye2 : eye1);
     arrayChat(eyeButtonOn ? "blur(5px)" : "blur(0px)");
@@ -30,7 +30,8 @@ eyeButton.addEventListener("click", () => {
 // Funcion para agregar el boton de privacidad
 function addEyeButton() {
     let searchBar = document.querySelector("._ai01");
-    if (! searchBar) { // Esperá un poco e intentá de nuevo
+    if (!searchBar) {
+        // Esperá un poco e intentá de nuevo
         setTimeout(addEyeButton, 500);
         return;
     }

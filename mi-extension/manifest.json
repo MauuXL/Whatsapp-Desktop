@@ -1,24 +1,24 @@
 {
-  "manifest_version": 2,
-  "name": "WhatsApp_Dark",
-  "version": "1.0.5",
-  "author": "MauuXL",
-  "description": "Extensión para cambiar temas en WhatsApp Web",
-  "permissions": ["storage", "activeTab", "https://web.whatsapp.com/*"],
-  "web_accessible_resources": ["css/light.css", "css/dark.css"],
-  "content_scripts": [
-    {
-      "matches": ["https://web.whatsapp.com/*"],
-      "css": ["css/content.css", "css/pallete.css"],
-      "js": [
-        "scripts/theme.js",
-        "scripts/toggle.js",
-        "scripts/rgb.js",
-        "scripts/privacy.js",
-        "scripts/tooltip.js",
-        "scripts/content.js"
-      ],
-      "run_at": "document_end"
-    }
-  ]
+    "manifest_version": 2,
+    "name": "WhatsApp_Dark",
+    "version": "1.0.5",
+    "author": "MauuXL",
+    "description": "Extensión para cambiar temas en WhatsApp Web",
+    "permissions": ["storage", "activeTab", "https://web.whatsapp.com/*"],
+    "web_accessible_resources": ["css/light.css", "css/dark.css"],
+    "content_scripts": [
+        {
+            "matches": ["https://web.whatsapp.com/*"],
+            "css": ["css/content.css", "css/pallete.css"],
+            "js": [
+                "scripts/theme.js",
+                "scripts/toggle.js",
+                "scripts/rgb.js",
+                "scripts/privacy.js",
+                "scripts/tooltip.js",
+                "scripts/content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
 }

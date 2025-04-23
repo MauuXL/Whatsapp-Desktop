@@ -1,22 +1,22 @@
 let toggleButton = document.createElement("div");
 toggleButton.id = "toggleButton";
 toggleButton.classList.add(
-  "_ajv7",
-  "x1n2onr6",
-  "x1okw0bk",
-  "x5yr21d",
-  "x14yjl9h",
-  "xudhj91",
-  "x18nykt9",
-  "xww2gxu",
-  "xlkovuz",
-  "x16j0l1c",
-  "x1786zcw",
-  "xyklrzc",
-  "x1mh8g0r",
-  "x1anpbxc",
-  "x18wx58x",
-  "xo92w5m"
+    "_ajv7",
+    "x1n2onr6",
+    "x1okw0bk",
+    "x5yr21d",
+    "x14yjl9h",
+    "xudhj91",
+    "x18nykt9",
+    "xww2gxu",
+    "xlkovuz",
+    "x16j0l1c",
+    "x1786zcw",
+    "xyklrzc",
+    "x1mh8g0r",
+    "x1anpbxc",
+    "x18wx58x",
+    "xo92w5m"
 );
 
 let toggleButtonOn = `<button
@@ -33,24 +33,24 @@ toggleButton.innerHTML = toggleButtonOn;
 
 // Agregar evento de clic izquierdo al toggleButton
 toggleButton.addEventListener("click", (e) => {
-  if (e.button === 0) {
-    // Solo clic izquierdo
-    lightThemeOn = (lightThemeOn % 4) + 1;
-    statusDarkThemeOn();
-    toggleButton.style.background = "var(--menu-bar-item-background-active)";
-    setTimeout(() => {
-      toggleButton.style.background = "rgba(0,0,0,0)";
-    }, 200);
-    localStorage.setItem("whatsapp-dark-theme-light", lightThemeOn);
-  }
+    if (e.button === 0) {
+        // Solo clic izquierdo
+        lightThemeOn = (lightThemeOn % 4) + 1;
+        statusDarkThemeOn();
+        toggleButton.style.background = "var(--menu-bar-item-background-active)";
+        setTimeout(() => {
+            toggleButton.style.background = "rgba(0,0,0,0)";
+        }, 200);
+        localStorage.setItem("whatsapp-dark-theme-light", lightThemeOn);
+    }
 });
 
 // Agregando toggle
 function addToggleButton() {
-  let targetElement = document.querySelector(".xyorhqc");
-  if (targetElement) {
-    targetElement.insertBefore(toggleButton, targetElement.firstChild);
-  } else {
-    setTimeout(addToggleButton, 1000);
-  }
+    let targetElement = document.querySelector(".xyorhqc");
+    if (targetElement) {
+        targetElement.insertBefore(toggleButton, targetElement.firstChild);
+    } else {
+        setTimeout(addToggleButton, 1000);
+    }
 }

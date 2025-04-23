@@ -19,9 +19,6 @@
   display: none !important;
 }
 
-.icon-eye {
-  
-}
 /*efecto de transicion blur*/
 [role="listitem"] {
   transition: filter 0.1s ease !important;

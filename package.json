@@ -1,24 +1,24 @@
 {
-  "name": "whatsapp-desktop",
-  "version": "1.0.0",
-  "description": "Este proyecto está licenciado bajo los términos de la licencia MIT. Ver el archivo [LICENSE](./LICENSE) para más detalles.",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MauuXL/Whatsapp-Desktop.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/MauuXL/Whatsapp-Desktop/issues"
-  },
-  "homepage": "https://github.com/MauuXL/Whatsapp-Desktop#readme",
-  "devDependencies": {
-    "electron": "^35.2.0"
-  }
+    "name": "whatsapp-desktop",
+    "version": "1.0.0",
+    "description": "Este proyecto está licenciado bajo los términos de la licencia MIT. Ver el archivo [LICENSE](./LICENSE) para más detalles.",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MauuXL/Whatsapp-Desktop.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "bugs": {
+        "url": "https://github.com/MauuXL/Whatsapp-Desktop/issues"
+    },
+    "homepage": "https://github.com/MauuXL/Whatsapp-Desktop#readme",
+    "devDependencies": {
+        "electron": "^35.2.0"
+    }
 }
